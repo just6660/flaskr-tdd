@@ -35,6 +35,7 @@ def connect_db():
 
 
 # create the database
+@app.before_first_request
 def init_db():
     with app.app_context():
         db = get_db()
