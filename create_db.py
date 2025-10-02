@@ -2,7 +2,7 @@
 
 
 from project.app import app, db
-from project.models import Post
+import project.models
 
 
 with app.app_context():
